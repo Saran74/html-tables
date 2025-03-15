@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Simple Table</title>
-    <style>
+  <title>Tables</title>
+  <style>
     body {
-      font-family: Arial;
+      font-family: Arial, sans-serif;
       background-color: #f9f9f9;
       padding: 20px;
     }
@@ -14,64 +14,75 @@
       width: 80%;
       margin: 0 auto;
       border-collapse: collapse;
-      background-color: #fff;
+      background-color: #ffffff;
+      border: 1px;
+      text-align: center;
+     
       
     }
 
-    th, td {
+    td {
       border: 1px solid;
       padding: 12px;
       text-align: center;
+      background-color: #00fc2a;
+    }
+    th {
+      border: 1px solid;
+      padding: 12px;
+      text-align: center;
+      background-color: #d9ff00;
+    }
+    #one{
+      background-color: aqua;
     }
 
-    .one{
-       width: 80%;
-      margin: 0 auto;
-      border-collapse: collapse;
-      background-color: #fff;
-      
-    }
 
  
   </style>
-
 </head>
 <body>
 
   <table>
-    <caption><h1>Students Information</h1></caption>
+        <caption><h1>Students Information</h1></caption>
     <tr>
-      <th>Student ID</th>
+      <th id="one">Student ID</th>
       <th>Name</th>
       <th>Age</th>
       <th>Grade</th>
+      <th>Image</th>
     </tr>
     <tr>
-      <td>1</td>
-      <td>Saran</td>
+      <td id="one">1</td>
+      <td>Vijay</td>
       <td>23</td>
       <td>A</td>
+      <td><img src="va.jpg" style="width:50px; height: 50px;"></td>
+    
     </tr>
     <tr>
-      <td>2</td>
-      <td>Akash</td>
+      <td id="one">2</td>
+      <td>Ajith</td>
       <td>24</td>
       <td>A</td>
+      <td><img src="va.jpg" style="width:50px; height: 50px;"></td>
     </tr>
     <tr>
-      <td>3</td>
+      <td id="one">3</td>
       <td>Bharath</td>
       <td>21</td>
       <td>A</td>
+      <td><img src="va.jpg" style="width:50px; height: 50px;"></td>
     </tr>
     <tr>
-      <td>4</td>
+      <td id="one">4</td>
       <td>Charlie</td>
       <td>22</td>
       <td>B</td>
+      <td><img src="va.jpg" style="width:50px; height: 50px;"></td>
     </tr>
   </table>
-  <table class="one">
+  <table>
     <caption><h1>Student Scores</h1></caption>
     <tr>
       <th rowspan="2">Student ID</th>
@@ -107,6 +118,15 @@
     <tr>
       <td>4</td>
       <td>Charlie</td>
+      
+    </tr>
+    <tr>
+       
+  
+      <td colspan="2">Total</td>
+      <td>273</td>
+      <td>257</td>
+      <td>266</td>
       
     </tr>
   </table>
